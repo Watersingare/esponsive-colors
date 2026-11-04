@@ -1,0 +1,195 @@
+
+/* ===== GENERAL STYLING ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #100d2b, #211447, #321b56);
+    color: #f5efff;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #c7a5ff, 0 0 25px #8c5bff;
+    margin: 20px 0 30px;
+}
+
+a {
+    color: #f2ddff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #d7a8ff;
+}
+
+p {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* ===== IMAGES ===== */
+img {
+    width: 100%;
+}
+
+div img {
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(179, 126, 255, 0.45);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 22px rgba(205, 160, 255, 0.85);
+}
+
+/* ===== MOBILE VIEW: DEFAULT ===== */
+div {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin: 5px 0;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(205, 174, 255, 0.35);
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+div:hover {
+    border-color: #c9a1ff;
+    box-shadow: 0 0 18px rgba(164, 112, 255, 0.3);
+}
+
+/* ===== TABLET VIEW: 772px AND ABOVE ===== */
+@media screen and (min-width: 772px) {
+    div {
+        width: 45%;
+        margin: 1.5%;
+        vertical-align: top;
+    }
+
+    div img {
+        max-height: 30vh;
+    }
+}
+
+/* ===== LARGE SCREEN VIEW: 998px AND ABOVE ===== */
+@media screen and (min-width: 998px) {
+    div {
+        width: 30%;
+        margin: 1%;
+    }
+}
+
+/*
+Các phần CSS mẫu bên dưới được giữ lại từ starter code.
+Chúng đang nằm trong comment nên không ảnh hưởng đến trang web.
+*/
+
+/*
+main {
+    border: 5px #000 solid;
+    margin: 10px;
+}
+*/
+
+/*
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+*/
+
+/*
+img {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+}
+*/
+
+/*
+.child {
+    position: relative;
+    display: inline-block;
+    border: 5px black solid;
+    margin: 5px;
+    border-radius: 5px;
+}
+*/
+
+/*
+.label {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+*/
+
+/*
+.button {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 25px;
+}
+*/
+
+/*
+.button:hover {
+    background-color: #fff;
+}
+*/
+
+/*
+footer {
+    display: flex;
+    justify-content: center;
+}
+*/
+
+/*
+header {
+    border-radius: 5px;
+    border: 5px #000 solid;
+    margin: 10px;
+}
+*/
+
+/*
+.label {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+*/
+
+/*
+.child:hover .label {
+    display: block;
+}
+*/
